@@ -1,13 +1,13 @@
 package GenericsDemo;
 
-public class MemoryCell {
-	private Object storedValue;
+public class MemoryCell<T> {
+	private T storedValue;
 	
-	public Object read() {
+	public T read() {
 		return storedValue;
 	}
 	
-	public void write(Object x) {
+	public void write(T x) {
 		storedValue = x;
  	}
 }
